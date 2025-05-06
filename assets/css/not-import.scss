@@ -1,0 +1,31 @@
+$grid-columns: 24; // Grid sütun sayısını 24 olarak ayarlayın
+$enable-negative-margins: true; // Negatif marginleri etkinleştirin
+$primary: #14183f;
+$smoothScroll: true;
+
+.nav-pills {
+  --bs-nav-pills-border-radius: 6px;
+  --bs-nav-pills-link-active-color: #f8f3f3;
+  --bs-nav-pills-link-active-bg: rgb(95, 32, 6);
+}
+
+pre {
+  code {
+    &.hljs {
+      white-space: pre-line;
+      padding-left: 30px;
+      padding-bottom: 30px;
+      border-radius: 20px;
+    }
+  }
+}
+.rightDocument {
+  height: 80vh;
+  overflow: auto;
+}
+
+.nav-link {
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,36 @@
+// Bootstrap'in Sass dosyalarını dahil etmeden önce değişkenleri özelleştir
+$grid-columns: 24; // Grid sütun sayısını 24 olarak ayarlayın
+$enable-negative-margins: true; // Negatif marginleri etkinleştirin
+$primary: #14183f;
+$smoothScroll:true;
+// Bootstrap'in Sass dosyasını dahil et
+@import "bootstrap/scss/bootstrap";
+
+/*custom styles*/
+main {
+  min-height: 100vh;
+  padding: 50px 0;
+}
+.heroSection {
+  height: 400px;
+}
+pre {
+  code {
+    &.hljs {
+      white-space: pre-line;
+      padding-left: 30px;
+      padding-bottom: 30px;
+      border-radius: 20px;
+    }   
+  }
+}
+.rightDocument{
+    height: 80vh;
+    overflow: auto;
+}
+
+.nav-link{
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+}
