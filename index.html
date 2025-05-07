@@ -14,53 +14,122 @@
         <div class="container">
             <section class="heroSection">
                 <div class="card border-light text-bg-dark p-lg-5 p-3 h-100 shadow-lg align-items-center justify-content-center gap-4 rounded-5">
-                    <div class="text-center">
-                        <h1 class="card-title">Bootstrap Değişkenleriyle Tasarımın Kontrolü</h1>
-                        <h2 class="card-text">SCSS ile özelleştirmenin gücü.</h2>
-                    </div>
-                    <p class="card-text col-lg-10 text-center">
-                        <small class="fs-5">
-                            Bootstrap’la tasarıma adım attıysan, işin asıl eğlenceli kısmı şimdi başlıyor!
-                            Renkleri, yazı tiplerini, boşlukları ve daha fazlasını kendine göre ayarlamak aslında çok kolay.
-                            SCSS değişkenleri sayesinde, sayfan tam anlamıyla senin tasarımın olacak.
-                        </small>
-                    </p>
-                    <div class="d-flex align-items-center gap-5">
-                        <a class="btn btn-outline-light btn-lg" href="pages/degiskenler.html">SCSS import Kullan</a>
-                        <a class="btn btn-outline-light btn-lg" href="pages/degiskenler-link.html">Link ile Kullan</a>
+                    <div class="d-flex align-items-start">
+                        <div class="d-flex flex-column align-items-center">
+                            <a href="https://getbootstrap.com/" target="_blank"><img width="90px" src="assets/images/bootstrap.svg" alt=""></a>
+                            <a href="https://sass-lang.com/" target="_blank"><img width="75px" src="assets/images/sass.svg" alt=""></a>
+                        </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center gap-4">
+                            <div class="text-center">
+                                <h1 class="card-title" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="200">Bootstrap Değişkenleriyle Tasarımın Kontrolü</h1>
+                                <h2 class="card-text" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="400">SCSS ile özelleştirmenin gücü.</h2>
+                            </div>
+                            <p class="card-text col-lg-10 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="600">
+                                <small class="fs-5">
+                                    Bootstrap’la tasarıma adım attıysan, işin asıl eğlenceli kısmı şimdi başlıyor!
+                                    Renkleri, yazı tiplerini, boşlukları ve daha fazlasını kendine göre ayarlamak aslında çok kolay.
+                                    SCSS değişkenleri sayesinde, sayfan tam anlamıyla senin tasarımın olacak.
+                                </small>
+                            </p>
+                            <div class="d-flex align-items-center gap-5">
+                                <a data-aos="fade-right" class="btn btn-outline-light btn-lg" href="pages/degiskenler.html" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="800">SCSS import Kullan</a>
+                                <a data-aos="fade-left" class="btn btn-outline-light btn-lg" href="pages/degiskenler-link.html" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="1000">Link ile Kullan</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <section class="col-lg-18 mx-auto ">
-                <div class="fs-2 fw-bold text-danger py-4 mb-4">
-                    Bootstrap değişkenlerine başlamadan önce bootstrap nedir bir bakalım.
+            <section class="col-lg-18 mx-auto mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="600">
+                <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="bootstrap-tab" data-bs-toggle="tab" data-bs-target="#bootstrap-tab-pane" type="button" role="tab" aria-controls="bootstrap-tab-pane" aria-selected="true">Bootstrap</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="sass-tab" data-bs-toggle="tab" data-bs-target="#sass-tab-pane" type="button" role="tab" aria-controls="sass-tab-pane" aria-selected="false">Sass</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="bootstrap-tab-pane" role="tabpanel" aria-labelledby="bootstrap-tab" tabindex="0">
+                        <div class="paragraph fs-5">
+                            <h2>Bootstrap Nedir?</h2>
+                            Bootstrap açık kaynak kodlu, ücretsiz bir CSS "Framework"tür. İlk olarak 2010 yılının ortalarında Twitter'dan Mark Otto (@mdo) ve Jacob Thornton (@fat) adlı geliştiriciler tarafından oluşturulmuştur.
+                            <br>
+                            <br>
+                            
+                            En başta "Twitter Blueprint" olarak çıkması beklenen Bootstrap çıkmasına bir kaç ay kala Twitter'ın düzenlediği birinci "Hack Week" sayesinde geliştiriciler tarafından fark edilip çok üst seviyelere taşınmıştır. Böylelikle Bootstrap; Twitter Blueprint yerine Bootstrap CSS Framework olarak piyasaya sürülmüştür.
+                            <hr>
+                            <br><br>
+                            <h2>Bootstrap ile Ne Yapabiliriz? </h2>
+                            Kolayca masaüstü, dizüstü, tablet ve mobil cihazlar için uyumlu siteler yapıp, kendimiz yapmaya çalıştığımızda uzun vakit alacak tasarım ögelerini sıfırdan kodlamaktansa halihazırda yapısı Bootstrap ekibi tarafından kodlanmış olan açılır menüler, butonlar, navigasyon barlar gibi tasarım ögelerini sadece düzenleyip çağırarak kullanabiliriz. Yani kısacası az vakit harcayarak büyük işler çıkarabiliriz. Bu tarz arayüz geliştirme kütüphaneleri sağladığı kolaylıkların yanısıra web geliştirmede standartlara bağlı kalmak için de güzel bir seçim olacaktır.
+                            <hr>
+                            <br><br>
+                            <h2> Nasıl Öğrenebilirim? </h2>
+                            Kendi sitesi Bootstrap'i kullanmak için en güzel kaynaktır. Projenize Bootstrap'e ait JS ve CSS dosyalarını dahil ederek başlayabilirsiniz. 5.3 versiyonu ile yenilenen web sayfasından ihtiyacınız olan her bölüm için hızlıca anlatım sayfasına ulaşabilirsiniz. Ayrıca eğitimlerin yer aldığı ücretli-ücretsiz birçok kaynak mevcuttur. Birçok web sayfasında kullanıldığından dolayı dokümanları da çok fazladır. Hızlıca öğrenip web projelerinizi Bootstrap tabanlı olarak inşa edebilirsiniz.
+                            <hr>
+                            <br><br>
+                            <h2>Sonuç olarak;</h2>
+                            Ücretsiz bir kütüphane olan Bootstrap'i kolay kullanımı sayesinde hızlıca öğrenip, sayfamızın kodlarına entegre ettikten sonra kullanmaya başlayabiliriz. Böylelikle zamandan tasarruf ederek kolayca mobil uyumlu siteler yapabiliriz.
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="sass-tab-pane" role="tabpanel" aria-labelledby="sass-tab" tabindex="0">
+                        <div class="paragraph fs-5">
+                            <h2>SASS Nedir?</h2>
+                            SASS, Syntactically Awesome Style Sheets(Sözdizimsel Müthiş Stil Sayfaları) ifadesinin kısaltılmış halidir. En çok kullanılan CSS ön-işlemcilerinden biridir.
+                            <br>
+                            <br>
+                            <hr>
+                            <br><br>
+                            <h2>En Popüler CSS ön-işlemcileri şunlardır; </h2>
+                            <ul>
+                                <li>SASS</li>
+                                <li>LESS</li>
+                                <li>Stylus</li>
+                                <li>PostCSS</li>
+                            </ul>
+                            <hr>
+                            <br><br>
+                            <h2> SASS ve CSS Arasındaki Fark Nedir?</h2>
+                            SASS , CSS yazmayı daha dinamik bir hale getirmek için ortaya çıkmıştır. Kısaca CSS ‘e bir programlama dili havası katmaktadır. CSS’ de bulunmayan pek çok özellik barındırır.(Değişken tanımlama, İç içe yapılar kullanma, Fonksiyon tanımlama,...)
+                            <hr>
+                            <br><br>
+                            <h2>Peki SASS Kullanmak İçin Ne Yapmayalım?</h2>
+                            Birden fazla kullanma yöntemi vardır, 
+                            <br><br>
+                            Bunlardan biri bilgisayarınıza indirip kurabiliceğiniz dönüştürücülerdir.
+                            <br><br>
+                            Dönüştürücüler kısaca yazmış olduğumuz .scss uzantılı dosyaları tarayıcıların anlayabileceği .css formatına dönüştürür.
+                            <hr>
+                            <br><br>
+                            <h2>En Popüler SASS-CSS dönüştürücüleri şunlardır;</h2>
+                            <ul>
+                                <li>Koala</li>
+                                <li>Scout-App</li>
+                                <li>SimpLess</li>
+                                <li>Sassmeister</li>
+                                <li>TheSassWay</li>
+                                <li>Compass</li>
+                                <li>Prepros</li>
+                            </ul>
+                            <br>
+                            Bir diğer yöntem ise Komut Satırı yardımı ile dönüştürmedir.
+                            <br><br>
+                            <h2>Visual Code ile SASS kullanımı</h2>
+                            Visual Code Extensions kısmından <b>Live Sass Compiler</b> yüklenir.
+                            <br><br>
+                            Sonrasında klasor yapımızı ve .scss dosyamızı olusturduktan sonra visual code alt bantta cıkan <b>watch sass</b> üzerine tıkladıgımızda dosyamız derlenerek .css cıktımızı verir. 
+                            <br><br>
+                            Biz html sayfamızın içerisinde .css uzantılı çıktıyı entegre ediyoruz.
+                        </div>
+
+                    </div>
                 </div>
-                <div class="paragraph fs-5">
-                    <h2>Bootstrap Nedir?</h2>
-                    Bootstrap açık kaynak kodlu, ücretsiz bir CSS "Framework"tür. İlk olarak 2010 yılının ortalarında Twitter'dan Mark Otto (@mdo) ve Jacob Thornton (@fat) adlı geliştiriciler tarafından oluşturulmuştur.
-                    <br>
-                    <br>
-                    
-                    En başta "Twitter Blueprint" olarak çıkması beklenen Bootstrap çıkmasına bir kaç ay kala Twitter'ın düzenlediği birinci "Hack Week" sayesinde geliştiriciler tarafından fark edilip çok üst seviyelere taşınmıştır. Böylelikle Bootstrap; Twitter Blueprint yerine Bootstrap CSS Framework olarak piyasaya sürülmüştür.
-                    <hr>
-                    <br><br>
-                    <h2>Bootstrap ile Ne Yapabiliriz? </h2>
-                    Kolayca masaüstü, dizüstü, tablet ve mobil cihazlar için uyumlu siteler yapıp, kendimiz yapmaya çalıştığımızda uzun vakit alacak tasarım ögelerini sıfırdan kodlamaktansa halihazırda yapısı Bootstrap ekibi tarafından kodlanmış olan açılır menüler, butonlar, navigasyon barlar gibi tasarım ögelerini sadece düzenleyip çağırarak kullanabiliriz. Yani kısacası az vakit harcayarak büyük işler çıkarabiliriz. Bu tarz arayüz geliştirme kütüphaneleri sağladığı kolaylıkların yanısıra web geliştirmede standartlara bağlı kalmak için de güzel bir seçim olacaktır.
-                    <hr>
-                    <br><br>
-                    <h2> Nasıl Öğrenebilirim? </h2>
-                    Kendi sitesi Bootstrap'i kullanmak için en güzel kaynaktır. Projenize Bootstrap'e ait JS ve CSS dosyalarını dahil ederek başlayabilirsiniz. 5.3 versiyonu ile yenilenen web sayfasından ihtiyacınız olan her bölüm için hızlıca anlatım sayfasına ulaşabilirsiniz. Ayrıca eğitimlerin yer aldığı ücretli-ücretsiz birçok kaynak mevcuttur. Birçok web sayfasında kullanıldığından dolayı dokümanları da çok fazladır. Hızlıca öğrenip web projelerinizi Bootstrap tabanlı olarak inşa edebilirsiniz.
-                    <hr>
-                    <br><br>
-                    <h2>Sonuç olarak;</h2>
-                    Ücretsiz bir kütüphane olan Bootstrap'i kolay kullanımı sayesinde hızlıca öğrenip, sayfamızın kodlarına entegre ettikten sonra kullanmaya başlayabiliriz. Böylelikle zamandan tasarruf ederek kolayca mobil uyumlu siteler yapabiliriz.
-                </div>
+
             </section>
         </div>
     </main>
 
 
-   
+    <script src="assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!--Aos.js cdn link sayfayı kaydırırken anımasyon olmasını saglıyor-->
     <script src="assets/js/app.js"></script><!--agırlıklı olarak tum sayfalarımızda kullandıgımız genel script kodlarımız bu dosyadadır-->
 </body>
