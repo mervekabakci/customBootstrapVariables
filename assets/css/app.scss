@@ -6,6 +6,19 @@ $smoothScroll:true;
 // Bootstrap'in Sass dosyasını dahil et
 @import "bootstrap/scss/bootstrap";
 
+
+/*line clamp start*/
+@for $i from 1 through 12 {
+  .line-clamp_#{$i} {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: $i;
+  }
+}
+/*line clamp end*/
+
 /*custom styles*/
 main {
   min-height: 100vh;
@@ -33,4 +46,24 @@ pre {
     min-height: 45px;
     display: flex;
     align-items: center;
+}
+
+/*Tabs css*/
+.nav-tabs{
+  .nav-link{
+    color: $primary!important;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all .3s linear;
+    &.active{
+      background-color: $danger!important;
+      color: $white!important;
+    }
+    @media screen and (min-width:992px) {
+      &:hover{
+        background-color: $danger!important;
+        color: $white!important;
+      }
+    }
+  }
 }

@@ -6,6 +6,7 @@
     <title>Bootstrap Değişkenleri</title>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /><!--Aos.js style cdn link sayfayı kaydırırken anımasyon olmasını saglıyor-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
 
     <link rel="stylesheet" href="assets/css/app.min.css"><!--custom genel stil dosyamız. klasor ıcerısınde aynı dızınde app.css dosyası da mevcut oradan ınceleme yapılabılır -->
 </head>
@@ -40,7 +41,7 @@
                 </div>
             </section>
             <section class="col-lg-18 mx-auto mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0" data-aos-delay="600">
-                <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                       <button class="nav-link active" id="bootstrap-tab" data-bs-toggle="tab" data-bs-target="#bootstrap-tab-pane" type="button" role="tab" aria-controls="bootstrap-tab-pane" aria-selected="true">Bootstrap</button>
                     </li>
@@ -48,7 +49,7 @@
                       <button class="nav-link" id="sass-tab" data-bs-toggle="tab" data-bs-target="#sass-tab-pane" type="button" role="tab" aria-controls="sass-tab-pane" aria-selected="false">Sass</button>
                     </li>
                   </ul>
-                  <div class="tab-content" id="myTabContent">
+                  <div class="tab-content shadow-lg p-5 rounded-bottom" id="myTabContent">
                     <div class="tab-pane fade show active" id="bootstrap-tab-pane" role="tabpanel" aria-labelledby="bootstrap-tab" tabindex="0">
                         <div class="paragraph fs-5">
                             <h2>Bootstrap Nedir?</h2>
@@ -119,6 +120,52 @@
                             Sonrasında klasor yapımızı ve .scss dosyamızı olusturduktan sonra visual code alt bantta cıkan <b>watch sass</b> üzerine tıkladıgımızda dosyamız derlenerek .css cıktımızı verir. 
                             <br><br>
                             Biz html sayfamızın içerisinde .css uzantılı çıktıyı entegre ediyoruz.
+                            <span class="fw-bold text-primary fs-5 ps-4"> Örneğin;</span>
+                            <pre><code class="css">
+                                /*line clamp start*/
+                                @for $i from 1 through 12 {
+                                  .line-clamp_#{$i} {
+                                    display: -webkit-box;
+                                    overflow: hidden;
+                                    -webkit-box-orient: vertical;
+                                    -moz-box-orient: vertical;
+                                    -webkit-line-clamp: $i;
+                                  }
+                                }
+                                /*line clamp end*/
+
+                                Yukarıdaki .scss dosyasının cıktısı asagıdaki gibi olur;
+                                .line-clamp_1 {
+                                    display: -webkit-box;
+                                    overflow: hidden;
+                                    -webkit-box-orient: vertical;
+                                    -moz-box-orient: vertical;
+                                    -webkit-line-clamp: 1;
+                                }
+                                .line-clamp_2 {
+                                    display: -webkit-box;
+                                    overflow: hidden;
+                                    -webkit-box-orient: vertical;
+                                    -moz-box-orient: vertical;
+                                    -webkit-line-clamp:2;
+                                }
+                                .line-clamp_3 {
+                                    display: -webkit-box;
+                                    overflow: hidden;
+                                    -webkit-box-orient: vertical;
+                                    -moz-box-orient: vertical;
+                                    -webkit-line-clamp: 3;
+                                }
+                                .....
+                                .line-clamp_12 {
+                                    display: -webkit-box;
+                                    overflow: hidden;
+                                    -webkit-box-orient: vertical;
+                                    -moz-box-orient: vertical;
+                                    -webkit-line-clamp: 3;
+                                }
+                            </code></pre>
+
                         </div>
 
                     </div>
@@ -131,6 +178,13 @@
 
     <script src="assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!--Aos.js cdn link sayfayı kaydırırken anımasyon olmasını saglıyor-->
+    <!-- Highlight.js kütüphanesini ekleyin başlangı. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <!-- Highlight.js'i başlatmak için son-->
     <script src="assets/js/app.js"></script><!--agırlıklı olarak tum sayfalarımızda kullandıgımız genel script kodlarımız bu dosyadadır-->
+    <script>
+        hljs.highlightAll();
+    </script>
 </body>
 </html>

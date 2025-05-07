@@ -12020,6 +12020,92 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/*line clamp start*/
+.line-clamp_1 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp_2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp_3 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.line-clamp_4 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.line-clamp_5 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.line-clamp_6 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
+.line-clamp_7 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+}
+
+.line-clamp_8 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+}
+
+.line-clamp_9 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 9;
+}
+
+.line-clamp_10 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+}
+
+.line-clamp_11 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 11;
+}
+
+.line-clamp_12 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 12;
+}
+
+/*line clamp end*/
 /*custom styles*/
 main {
   min-height: 100vh;
@@ -12046,4 +12132,22 @@ pre code.hljs {
   min-height: 45px;
   display: flex;
   align-items: center;
+}
+
+/*Tabs css*/
+.nav-tabs .nav-link {
+  color: #14183f !important;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s linear;
+}
+.nav-tabs .nav-link.active {
+  background-color: #dc3545 !important;
+  color: #fff !important;
+}
+@media screen and (min-width: 992px) {
+  .nav-tabs .nav-link:hover {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+  }
 }
